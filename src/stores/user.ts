@@ -1,6 +1,7 @@
 import { reactive, ref } from 'vue'
 import { defineStore } from 'pinia'
 import { useRouter } from 'vue-router'
+import router from '@/router';
 import { message } from 'ant-design-vue'
 import { useRequest } from '@/hooks'
 
@@ -29,7 +30,8 @@ export const useUserStore = defineStore('user', () => {
 
     message.success('Login Sucess!')
 
-    router.replace({ name: 'Home' })
+    // router.replace({ name: 'Home' })
+    router.push('/home');
   }
 
   const logout = () => {
@@ -38,7 +40,8 @@ export const useUserStore = defineStore('user', () => {
     userInfo.userId = ''
     userInfo.gender = -1
 
-    router.replace({ name: 'Login' })
+    // router.replace({ name: 'Login' })
+    router.push('/auth/login')
   }
 
   return {

@@ -25,8 +25,8 @@ const plugins: PluginOption[] = [
   }),
   Pages({
     dirs: [
-      { dir: 'src/views', baseRoute: '' },
-      { dir: 'src/views/home', baseRoute: '/' }
+      { dir: 'src/pages', baseRoute: '' },
+      { dir: 'src/pages/home', baseRoute: '/' }
     ],
     importMode: 'async',
     exclude: ['**/components/**']

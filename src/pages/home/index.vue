@@ -1,6 +1,6 @@
-<route lang="yaml">
+<!-- <route lang="yaml">
 name: Home
-</route>
+</route> -->
 
 <script setup lang="ts"></script>
 

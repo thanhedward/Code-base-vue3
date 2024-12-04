@@ -3,5 +3,6 @@ export const enUS = {
   'Change Language': 'Change Language',
   Test: 'Test',
   Internationalization: 'Internationalization',
-  Dashboard: 'Dashboard'
+  Dashboard: 'Dashboard',
+  User: 'User',
 }

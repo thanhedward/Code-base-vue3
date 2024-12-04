@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
-import zhCN from 'ant-design-vue/es/locale/zh_CN'
+import jaJP from 'ant-design-vue/es/locale/ja_JP'
 import enUS from 'ant-design-vue/es/locale/en_US'
 
 import { useRoute } from 'vue-router'
@@ -13,7 +13,7 @@ const { locale: i18NLocale } = useI18n({ useScope: 'global' })
 const appStore = useAppStore()
 const route = useRoute()
 
-const antdLocales = { zhCN, enUS }
+const antdLocales = { jaJP, enUS }
 
 const antdLocale = computed(
   () => antdLocales[appStore.locale as keyof typeof antdLocales]

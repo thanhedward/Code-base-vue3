@@ -1,8 +1,8 @@
-<route lang="yaml">
+<!-- <route lang="yaml">
 name: Login
 meta:
   requiresAuth: false
-</route>
+</route> -->
 
 <template>
   <div class="login">

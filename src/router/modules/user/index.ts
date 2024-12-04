@@ -1,17 +1,16 @@
 import type { RouteRecordRaw } from 'vue-router';
 import { useI18n } from 'vue-i18n'
-import AppLayout from '@/pages/dashboard/DashboardComponent.vue';
-
+import UserLayout from '@/pages/user/DemoUserComponent.vue';
 
 // const { t } = useI18n()
 
-const dashboardRoute: RouteRecordRaw = {
-  path: '/dashboard',
-  component: AppLayout,
+const userRoute: RouteRecordRaw = {
+  path: '/users',
+  component: UserLayout,
   children: [
     {
       path: '',
-      component: () => import('@/pages/dashboard/DashboardComponent.vue'),
+      component: () => import('@/pages/user/DemoUserComponent.vue'),
       name: 'dashboard',
       meta: {
         requireAuth: true,
@@ -21,4 +20,4 @@ const dashboardRoute: RouteRecordRaw = {
   ]
 };
 
-export default dashboardRoute;
+export default userRoute;

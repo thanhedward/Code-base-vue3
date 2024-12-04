@@ -99,7 +99,7 @@ Based on the internal Hard Link mechanism, `pnpm` is almost 2 times faster than 
         |
         |-- index.less          👉  Public style entry file
     |
-    |-- views/                  👉  View file directory
+    |-- pages/                  👉  View file directory
     |
     |-- App.vue                 👉  View file global entry
     |
@@ -153,13 +153,13 @@ Based on the internal Hard Link mechanism, `pnpm` is almost 2 times faster than 
 ```
 
 ### Routing configuration
-In this framework system, you don't need to pay attention to any routing configuration information. You just need to place the corresponding page in the `@/views` folder of the corresponding level and name, and the framework will do the automated route building and parsing.
+In this framework system, you don't need to pay attention to any routing configuration information. You just need to place the corresponding page in the `@/pages` folder of the corresponding level and name, and the framework will do the automated route building and parsing.
 
 #### Route Resolution
 The following is the route path that will be parsed by the framework for the directory structure of a case.
 
 ```
-|-- views/
+|-- pages/
   |-- home/
   | |-- index.vue        👉  /
   |-- pageA/

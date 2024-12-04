@@ -38,7 +38,7 @@ const appStore = useAppStore()
 const userStore = useUserStore()
 
 const changeLocale = () => {
-  const NEW_LOCALE = appStore.locale === 'zhCN' ? 'enUS' : 'zhCN'
+  const NEW_LOCALE = appStore.locale === 'jaJP' ? 'enUS' : 'jaJP'
   appStore.changeLocale(NEW_LOCALE)
 }
 </script>
